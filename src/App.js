@@ -4,12 +4,12 @@ import Card from "./components/card";
 import SpecialCard from "./components/card/SpecialCard";
 import Hosting from "./components/hosting";
 import Navbar from "./components/navbar";
-import { CheckCircle2, Info } from 'lucide-react';
+import { CheckCircle2, Info } from "lucide-react";
 import buildersData from "./data/data";
 import RecommendationCard from "./components/recommendation";
 import Footer from "./components/footer";
 import SignUp from "./components/signup";
-function App () {
+function App() {
   return (
     <div className="w-full">
       <Navbar />
@@ -20,7 +20,10 @@ function App () {
           </p>
           <div className="flex flex-row max-sm:flex-col text-[14px] min-h-[44px] max-h-max border-b-[1px] border-t-[1px] items-center max-sm:items-start justify-between">
             <div className="flex flex-row max-sm:flex-col my-4 gap-3">
-              <InfoComponent Icon={<CheckCircle2 />} title="Last Updated - February 22, 2020" />
+              <InfoComponent
+                Icon={<CheckCircle2 />}
+                title="Last Updated - February 22, 2020"
+              />
               <InfoComponent Icon={<Info />} title="Advertising Disclosure" />
             </div>
             <div>
@@ -34,9 +37,7 @@ function App () {
         <Hosting />
         <div className="flex flex-col gap-2">
           {buildersData.map((data, idx) => {
-            return data !== undefined && (
-              <Card key={idx} data={data} />
-            )
+            return data !== undefined && <Card key={idx} data={data} />;
           })}
           <SpecialCard />
         </div>
@@ -50,9 +51,9 @@ function App () {
             <RecommendationCard />
           </div>
         </div>
-        <SignUp/>
+        <SignUp />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

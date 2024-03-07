@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function Label({classes, title}) {
-  return (
-    <span className={`${classes}`}>
-            {title}
-          </span>
-  )
+function Label({ classes, title }) {
+  return <span className={`${classes}`}>{title}</span>;
 }
 
-export default Label
+export default Label;
