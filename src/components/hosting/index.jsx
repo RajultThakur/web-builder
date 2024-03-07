@@ -15,7 +15,7 @@ function Hosting() {
               {host}{" "}
             </p>
             {index !== hosts.length - 1 && (
-              <ChevronRight className="text-gray-400" />
+              <ChevronRight key={index + 100} className="text-gray-400" />
             )}
           </>
         );

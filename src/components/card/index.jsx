@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Web from "../../assets/web.png";
 import CardDetails from "./card-details";
 import ImageCard from "./card-image";
@@ -6,19 +6,8 @@ import RatingCard from "./card-rating";
 import { Trophy, Gem } from "lucide-react";
 import CardLabel from "./card-label";
 function Card({ data }) {
-  console.log(data);
-  const {
-    imageTitle,
-    title,
-    details,
-    mainHighlight,
-    rating,
-    ratingType,
-    label,
-  } = data;
-  //   useEffect(() => {
-  // if(!data) return ;
-  //   },[])
+  const { imageTitle, details, mainHighlight, rating, ratingType, label } =
+    data;
 
   return (
     <>
